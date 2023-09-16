@@ -1,0 +1,240 @@
+<html>
+    <style>
+ form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+label, input[type=text], textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+input[type=text], textarea {
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}</style>
+<head>
+  <title>Hotel Artisin</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stili/stile.css">
+<script src="jquery-3.2.1.min.js"></script>
+      <script src="popper.min.js"></script>
+	  <script src="bootstrap.min.js"></script>
+   
+ <link rel=”stylesheet” href=’slideshow.css’ type=”text/css”>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="icon" href="7020bandiera.ico" />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div id="fh5co-wrapper" style="background-image: url(sfondo.jpg);">
+	<div id="fh5co-page" style="background-image: url(sfondo.jpg);">
+
+        <div class="topnav"  id="myTopnav">
+  <a href="index.html" class="active"><img src="./bandiera.png" style="margin-left: 7px" height="70" width="70"></a>
+  <div style="padding-top: 20px">
+    
+  <a style="margin-left: 7px" href="index.html">Home</a>
+  <div style="margin-left: 7px" class="dropdown">
+    <button class="dropbtn dropdown">Camere 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content dropdown">
+      <a href="camere.html">Camere</a>
+      <a href="prezzi.html">Prezzi</a>
+    </div>
+  </div> 
+  <div style="margin-left: 7px" class="dropdown">
+    <button class="dropbtn dropdown">Servizi 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content dropdown">
+      <a href="servizi.html">Servizi</a>
+      <a href="spa.html">Spa</a>
+      <a href="ebike.html">E-bike</a>
+    </div>
+  </div> 
+  <div style="margin-left: 7px" class="dropdown">
+    <button class="dropbtn dropdown">Limone 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content dropdown">
+      <a href="limone.html">Limone</a>
+      <a href="sci.html">Riserva Bianca</a>
+    </div>
+  </div> 
+  <a style="margin-left: 7px" href="galleria.html">Galleria</a>
+  <a style="margin-left: 7px" href="contatti.html">Contatti</a>
+   </div>
+  <a href="javascript:void(0);" style="font-size:35px; padding-top: 5px; padding-right: 30px; padding-bottom: 40px; height: 67" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<br><br>
+<div class="container">
+<div class="col-md-6" style="background: rgb(255, 255, 255);
+background: rgba(255, 255, 255, 0.6);font-family: sans-serif;">        
+<form action="mailto:info@hotelartisin.com?subject=Richiesta_di_prenotazione" method="post" enctype="text/plain" style="font-family: sans-serif">
+ <br> <h3 align="center">MODULO DI RICHIESTA PRENOTAZIONE</h3>  <br>
+<label for="nome" style="font-size: 1.1em; font-family: sans-serif">Nome e Cognome*</label>
+  <input type="text" id="nome" name="nome"required placeholder="Inserisci Nome e Cognome" style="opacity: 0.8">
+
+  <label for="email" style="font-size: 1.1em">Email*</label>
+  <input type="text" id="email" name="email" required placeholder="Indirizzo di posta elettronica" style="opacity: 0.8">
+
+  <label for="tel" style="font-size: 1.1em">Telefono*</label>
+  <input type="text" id="tel" name="tel" required placeholder="Numero di telefono" style="opacity: 0.8">
+    
+<label for="camera" style="font-size: 1.1em">Tipo di sistemazione*</label>
+  <select name="sistemazione" id="sistemazione"required size="1" placeholder="" style="opacity: 0.8">
+      <option value="doppia"> - </option>
+      <option value="doppia">Camera doppia</option>
+      <option value="tripla">Camera tripla</option>
+      <option value="family">Family Room 4 posti</option>
+    </select> <br><br>
+    
+<label for="adulti" style="font-size: 1.1em">N. ospiti adulti*</label>
+<input type="text" id="adulti" name="adulti" required placeholder=" " style="opacity: 0.8">
+    
+<label for="bambini" style="font-size: 1.1em">N. ospiti bambini*</label>
+<input type="text" id="bambini" name="bambini" required placeholder=" " style="opacity: 0.8">
+    
+<label for="etabambini" style="font-size: 1.1em">Età bambini</label>
+<input type="text" id="etabambini" name="bambini" style="opacity: 0.8">
+
+<input type="checkbox" id="culla" name="culla" style="opacity: 0.8;font-size: 1.1.em;font-family: sans-serif">    Culla / lettino bebè
+
+<br><br>   
+<label for="arrivo" style="font-size: 1.1em">Data di arrivo*</label>
+<input type="text" id="arrivo" name="arrivo" required placeholder=" " style="opacity: 0.8"><br>
+    
+<label for="partenza" style="font-size: 1.1em">Data di partenza*</label>
+<input type="text" id="partenza" name="partenza" required placeholder=" " style="opacity: 0.8"><br>
+    
+<label for="msg" style="font-size: 1.1em">Messaggio</label>
+  <textarea id="msg" name="msg" placeholder="Scrivi il tuo messaggio" style="opacity: 0.8"></textarea>
+<br><br>
+<input type="checkbox" id="privacy" name="privacy" required placeholder="privacy" style="opacity: 0.8;font-size: 1.1.em;font-family: sans-serif"> "Autorizzo Hotel Artisin al trattamento dei miei dati personali ai sensi della normativa vigente in materia di protezione delle persone e rispetto al trattamento dei dati personali."<br>
+  <br><br>  
+<input type="submit" value="Invia richiesta">
+<input type="reset" value="Reset">
+
+</form>
+<br>
+  </div>      
+  <br>
+<div class="col-md-6">
+    <div class="jumbotron" style="background-color:white;opacity:0.8; ">
+<h3 align="center">COME RAGGIUNGERCI</h3>
+    <p style="font-size: 1.1em; font-family: sans-serif">
+    L'ARTISIN si trova nella vicinanze delle piste da sci del "Maneggio", immerso nel verde, a circa 900 mt. dal centro paese (10 min a piedi).</p>
+    <p style="font-size: 1.1em; font-family: sans-serif">IN AUTO -> da Torino uscita autostradale “Cuneo-Sant’Albano” dell’A6 Torino-Savona; dalla Liguria l’autostrada è la medesima, ma l’uscita consigliata è "Mondovì", oppure si può fare il Colle di Nava. Da entrambe le uscite si prosegue in direzione della SS 20 del Colle di Tenda, passando per Borgo S.D., Robilante e Vernante. 
+    <br>A causa dell’alluvione che ha colpito Limone, il Tunnel del Colle di Tenda e la statale della Valle Roya da Ventimiglia sono interrotti e non agibili al momento. 
+<br>In estate, solo con mezzi idonei (fuoristrada), è possibile raggiungerci via strade militari di montagna sterrate (contattateci per maggiori informazioni).
+</p>
+    <p style="font-size: 1.1em; font-family: sans-serif">IN TRENO -> Limone è facilmente raggiungibile grazie alla storica linea ferroviaria “Cuneo-Ventimiglia”. Controllate gli orari aggiornati direttamente sul sito Trenitalia.
+Avvisandoci possiamo venire ad accogliervi direttamente in stazione con la navetta dell'hotel.</p>
+     <p style="font-size: 1.1em; font-family: sans-serif">IN AEREO -> Limone si trova a 45 minuti dall’aeroporto di Cuneo-Levaldigi e a meno di due ore da quello di Torino Caselle, Genova “Cristoforo Colombo” e Nizza Cote D’Azur.
+Come servizio aggiuntivo l'Hotel Artisin può organizzare il servizio di transfer, da e per l’aeroporto.</p>
+</div>
+   <iframe class="imap" style="padding-bottom: 20px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2860.37583969366!2d7.586617815025731!3d44.19932512496277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cd7714a746f787%3A0xd99c840eb0b0d8d1!2sHotel%20L&#39;Artisin!5e0!3m2!1sit!2sit!4v1576012847699!5m2!1sit!2sit" width="540" height="560" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>  
+</div>
+</div>
+</div>
+<br><br>
+    
+<div class="container">
+<div class="jumbotron" style="background-color:white;opacity:0.8">
+<h4 align= "center">LINK UTILI</h4>
+    <a href="http://www.limonepiemonte.it"><img src="logotur.jpg" width=150></a>&emsp;&emsp;&emsp;
+    <a href="https://www.riservabianca.it"><img src="riserva.png" width=150 ></a>&emsp;&emsp;&emsp;
+    <a href="https://www.alpine-pearls.com/it/"><img src="2.jpg" width=100 ></a>&emsp;&emsp;&emsp;&emsp;
+    <a href="http://www.cuneoholiday.com"><img src="atl.jpg" width=100 ></a>&emsp;&emsp;&emsp;&emsp;
+    <a href="https://limone-on.com"><img src="limoneon.jpg" width=100 ></a>&emsp;&emsp;&emsp;
+    <a href="http://www.laviadelsale.com"><img src="viadelsalelogo.png" width=80 ></a>&emsp;&emsp;&emsp;
+    <a href="https://www.scuolascilimone.it"><img src="logosci.png" width=150></a>&emsp;&emsp;&emsp;
+    <a href="https://www.meteo.it/meteo/limone-piemonte-4110"><img src="meteo.png" width=80></a>&emsp;&emsp;&emsp;&emsp;
+    <a href="https://www.botteroski.com/it/"><img src="bottero.jpg" width=200 ></a>&emsp;&emsp;&emsp;
+    <a href="http://www.parcoalpimarittime.it"><img src="alpimarittime.jpg" width=100 ></a>&emsp;&emsp;&emsp;
+    <a href="http://www.rideupbike.it/"><img src="rideup.png" width=100 ></a>&emsp;&emsp;
+    <a href="https://www.facebook.com/zonesportshop/"><img src="zone.png" width=100 ></a>
+</div>
+</div>
+    
+<br><br>
+  <!-- Inizio Codice ShinyStat -->
+<script type="text/javascript" src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=hotelartisin"></script>
+<noscript>
+<a href="http://www.shinystat.com/it/" target="_top">
+<img src="//www.shinystat.com/cgi-bin/shinystat.cgi?USER=hotelartisin" alt="Contatore sito" style="border:0px" /></a>
+</noscript>
+<!-- Fine Codice ShinyStat -->       
+<div class="row" style="background-color:black;opacity:0.7;padding: 7;border-top-width: thin; border-bottom-width: thick;
+ ">
+<h3 align="center"  style="color: whitesmoke">SCOPRI I NOSTRI SOCIAL . . .</h3><br>
+    <div style="  display: flex;
+  justify-content: center;">
+      
+    <div class="">
+    <a href="https://www.facebook.com/tommy.dalmasso.9"><img src="fbicon.png" width="50" height="50" style="color: white"></a>
+    </div>
+     <div class="">
+    <a href="https://www.instagram.com/hotelartisin/"><img src="instaicon.png" width="50" height="50" ></a>
+    </div>
+    
+    <a href="https://www.tripadvisor.it/Hotel_Review-g194797-d1378775-Reviews-Hotel_l_artisin-Limone_Piemonte_Province_of_Cuneo_Piedmont.html"><img src="tripicon.png" width="60" height="62" ></a>
+ </div>
+</div>
+    
+<div class="row" style="background-color:black;color:white;padding:20px;opacity:0.7;width: 103%">
+    <div class="col-md-1">
+  </div>
+    <div class="col-md-4">
+        <span class="glyphicon glyphicon-envelope" style="text-align: center"></span><a href="mailto:info@hotelartisin.com" style="color: white"> info@hotelartisin.com </a>
+  </div>
+  <div class="col-md-4">
+  <span class="glyphicon glyphicon-phone" style="text-align: center"></span><a href="tel: +393288844459" style="color: white">+39 3288844459</a> 
+  </div>
+  <div class="col-md-3">
+      <span class="glyphicon glyphicon-phone-alt" style="text-align: center"></span> <a href="tel: +39017192380" style="color: white"> +39 017192380</a>
+  </div>
+</div>
+     
+<div class="row" style="background-color:black;color:white;padding:20px;opacity:0.7">
+    <p align="center" style="font-size: 15">Hotel L'Artisin - Via Almellina,26 - 12015 Limone P.te (CN) - P.IVA. 03162500049 - CIR 004110-ALB-00004 - Tel. <a href="tel:+39017192380" style="color: white">017192380</a> - Cell. <a href="tel:+393288844459" style="color: white">3288844459</a> - <a href="mailto:info@hotelartisin.com" style="color: white">info@hotelartisin.com</a></p>
+</div>
+</body>
+</html>

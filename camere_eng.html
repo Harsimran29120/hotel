@@ -1,0 +1,371 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<head>
+  <title>Hotel Artisin</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stili/stile.css">
+<script src="jquery-3.2.1.min.js"></script>
+      <script src="popper.min.js"></script>
+	  <script src="bootstrap.min.js"></script>
+ <link rel=”stylesheet” href=’slideshow.css’ type=”text/css”>
+    <link rel="icon" href="7020bandiera.ico" />
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stili/stile.css">
+<script src="jquery-3.2.1.min.js"></script>
+      <script src="popper.min.js"></script>
+	  <script src="bootstrap.min.js"></script>
+ <link rel=”stylesheet” href=’slideshow.css’ type=”text/css”>
+     <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="icon" href="7020bandiera.ico" />
+
+
+</head>
+<body>
+<div id="fh5co-wrapper" style="background-image: url(sfondo.jpg);">
+	<div id="fh5co-page" style="background-image: url(sfondo.jpg);">
+
+        <div class="topnav"  id="myTopnav">
+  <a href="index.html" class="active"><img src="./bandiera.png" style="margin-left: 7px" height="70" width="70"></a>
+    <div style="padding-top: 20px">
+  <a style="margin-left: 7px" href="home_eng.html">Home</a>
+  <div style="margin-left: 7px" class="dropdown">
+    <button class="dropbtn dropdown">Room 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content dropdown">
+      <a href="camere_eng.html">Room</a>
+      <a href="prezzi_eng.html">Prices</a>
+    </div>
+  </div> 
+  <div style="margin-left: 7px" class="dropdown">
+    <button class="dropbtn dropdown">Services 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content dropdown">
+      <a href="servizi_eng.html">Services</a>
+      <a href="spa_eng.html">Spa</a>
+      <a href="ebike_eng.html">E-bike</a>
+    </div>
+  </div> 
+  <div style="margin-left: 7px" class="dropdown">
+    <button class="dropbtn dropdown">Limone 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content dropdown">
+      <a href="limone_eng.html">Limone</a>
+      <a href="sci_eng.html">Riserva Bianca</a>
+    </div>
+  </div> 
+  <a style="margin-left: 7px" href="galleria_eng.html">Gallery</a>
+  <a style="margin-left: 7px" href="contatti_eng.html">Contacts</a>
+
+    
+  </div>
+  <a href="javascript:void(0);" style="font-size:35px; padding-top: 5px; padding-right: 30px; padding-bottom: 40px; height: 67" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<br><br><br>
+<div class="container">
+<div class="jumbotron" style="background-color:white;opacity:0.8">
+<h2 align="center">OUR ROOMS</h2>
+    <p style="font-size: 1.2em; font-family: sans-serif">Our rooms are equipped with every comfort:<br>
+Tv-color LCD, telephone, mini-bar, Wi-Fi connection, safe, private bathroom, ect.<br>
+The rooms located on the ground floor, accessible to the handicapped, have a large terrace, while those on the upper floors have a large balcony from which you can enjoy a wonderful view of the mountains around!<br>
+The entrance of each room is independent to guarantee a quiet and privacy holiday.
+The "basic" rooms have a double bed and a single bed. Those "superior" also have a separate bedroom/loft to accommodate large families.
+</p>
+<a href="prezzi_eng.html" type="button" class="btn btn-primary">Check the prices</a>
+</div>
+</div>
+        <br>
+<div class="col-md-2">
+        </div>
+<div class="container">
+    <div class="mySlides">
+    <div class="numbertext">1 / 12</div>
+    <img src="camera3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 12</div>
+    <img src="prova1.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 12</div>
+    <img src="camera9.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 12</div>
+    <img src="camera7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 12</div>
+    <img src="camera8.jpg" style="width: 100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">6 / 12</div>
+    <img src="camera10.png" style="width: 100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">7 / 12</div>
+    <img src="camera11.png" style="width: 100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">8 / 12</div>
+    <img src="camera12.png" style="width: 100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">9 / 12</div>
+    <img src="camera13.png" style="width: 100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">10 / 12</div>
+    <img src="camera14.png" style="width: 100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">11 / 12</div>
+    <img src="camera15.png" style="width: 100%">
+  </div>
+    
+    <div class="mySlides">
+    <div class="numbertext">12 / 12</div>
+    <img src="camera16.png" style="width: 100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+     <div class="column">
+      <img class="demo cursor" src="camera3.jpg" style="width:100%" onclick="currentSlide(1)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="prova1.JPG" style="width:85%" onclick="currentSlide(2)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="camera9.jpg" style="width:100%" onclick="currentSlide(3)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="camera7.jpg" style="width:100%" onclick="currentSlide(4)" alt=" ">
+    </div>   
+    <div class="column">
+      <img class="demo cursor" src="camera8.jpg" style="width:100%" onclick="currentSlide(5)" alt=" ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="camera10.png" style="width:105%" onclick="currentSlide(6)" alt=" ">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="camera11.png" style="width:100%" onclick="currentSlide(7)" alt=" ">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="camera12.png" style="width:100%" onclick="currentSlide(8)" alt=" ">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="camera13.png" style="width:100%" onclick="currentSlide(9)" alt=" ">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="camera14.png" style="width:100%" onclick="currentSlide(10)" alt=" ">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="camera15.png" style="width:100%" onclick="currentSlide(11)" alt=" ">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="camera16.png" style="width:100%" onclick="currentSlide(12)" alt=" ">
+    </div>
+      
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div class="col-md-2">
+</div>
+</div>
+<br><br>
+        
+<!-- Inizio Codice ShinyStat -->
+<script type="text/javascript" src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=hotelartisin"></script>
+<noscript>
+<a href="http://www.shinystat.com/it/" target="_top">
+<img src="//www.shinystat.com/cgi-bin/shinystat.cgi?USER=hotelartisin" alt="Contatore sito" style="border:0px" /></a>
+</noscript>
+<!-- Fine Codice ShinyStat -->
+        
+<div class="row" style="background-color:black;color:white;padding:20px;opacity:0.7;width: 103%">
+    <div class="col-md-1">
+  </div>
+    <div class="col-md-4">
+        <span class="glyphicon glyphicon-envelope" style="text-align: center"></span><a href="mailto:info@hotelartisin.com" style="color: white"> info@hotelartisin.com </a>
+  </div>
+  <div class="col-md-4">
+  <span class="glyphicon glyphicon-phone" style="text-align: center"></span><a href="tel: +393288844459" style="color: white">+39 3288844459</a> 
+  </div>
+  <div class="col-md-3">
+      <span class="glyphicon glyphicon-phone-alt" style="text-align: center"></span> <a href="tel: +39017192380" style="color: white"> +39 017192380</a>
+  </div>
+</div>
+        
+<div class="row" style="background-color:black;color:white;padding:20px;opacity:0.7">
+    <p align="center" style="font-size: 15">Hotel L'Artisin - Via Almellina,26 - 12015 Limone P.te (CN) - P.IVA. 03162500049 - CIR 004110-ALB-00004 - Tel. <a href="tel:+39017192380" style="color: white">017192380</a> - Cell. <a href="tel:+393288844459" style="color: white">3288844459</a> - <a href="mailto:info@hotelartisin.com" style="color: white">info@hotelartisin.com</a></p>
+</div>
+</body>
+</html>
