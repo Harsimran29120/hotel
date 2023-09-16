@@ -1,0 +1,144 @@
+<html>
+<head>
+  <title>Hotel Artisin</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stili/stile.css">
+<script src="jquery-3.2.1.min.js"></script>
+      <script src="popper.min.js"></script>
+	  <script src="bootstrap.min.js"></script>
+ <link rel=”stylesheet” href=’slideshow.css’ type=”text/css”>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="fh5co-wrapper" style="background-image: url(sfondo.jpg);">
+	<div id="fh5co-page" style="background-image: url(sfondo.jpg);">
+	<div id="fh5co-header" style="background-image: url(sfondo.jpg);">
+    
+<header>
+       <nav>
+           <ul>
+               <li><img src="bandiera.png" height="70" width="70">  </li>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="camere.html">Camere</a></li>
+               <li><a href="servizi.html">Servizi</a>
+               <ul>
+                   <li><a href=spa.html>Spa</a></li>
+                   <li><a href=ebike.html>E-Bike</a></li>
+               </ul></li>
+               <li><a href="limone.html">Limone</a>
+               <ul>
+               <li><a href="sci.html">Riserva Bianca</a></li>
+               </ul></li>
+               <li><a href="galleria.html">Galleria</a></li>
+               <li><a href="contatti.html">Contatti</a></li>    
+           </ul>
+        </nav>
+       </header>
+<br><br><br><br><br>								
+								<!-- free iperbooking form -->
+								<form action="/free/iperbooking-form.cfm" method="post">
+								<!-- 																 -->
+								<!-- INSERIRE AL POSTO DEI CARATTERI ::EEEEEEEE:: L'EMAIL DELL'HOTEL -->
+								<!-- 																 -->
+								<input type="hidden" name="EMAILHOTEL" value="info@hotelartisin.com">
+							
+								<!-- INSERIRE AL POSTO DEI CARATTERI ::WWWWWWW:: L'INDIRIZZO DEL SITO DELL'HOTEL COMPLETO DI HTTP:// -->
+								
+								<input type="hidden" name="Risposta" value="HTTP://www.hotelartisin.com">
+								
+								<table width="500" border="0" style="color: black;style=font-family: sans-serif;">
+									<tr>
+										<td> </td>
+										<td colspan="2" style="text-align: center; font-size: 1.5em"><b>MODULO RICHIESTA PRENOTAZIONE</b><br></td>
+									</tr>
+									<tr>
+										<td> </td>
+										<td>  * i campi contrassegnati dall'asterisco sono obbligatori<br></td>
+									</tr>
+									<tr> 
+										<td align="right">Nome e cognome*: </td>
+										<td><input type="text" name="nome" size="45" value=""></td>
+										<td> </td>
+									</tr>
+									<tr>
+                                        <td align="right">Telefono*: </td>
+										<td><input type="text" name="telefono" size="15" value=""></td>
+										<td> </td>
+									</tr>
+										<td align="right">E-mail*: </td>
+										<td><input type="text" name="email" size="45" value=""></td>
+										<td> </td>
+									</tr>
+									<tr> 
+										<td align="right">Indirizzo:</td>
+										<td><input type="text" name="indirizzo" size="45" value=""></td>
+										<td> </td>
+									</tr>
+									<tr> 
+										<td align="right">Città:</td>
+										<td><input type="text" name="citta" size="45" value=""></td>
+										<td> </td>
+									</tr>
+									<tr>
+										<td align="right">Tipo di sistemazione:*</td>
+										<td>
+											<select name="sistemazione" size="1">
+												<option value="doppia">Camera doppia</option><option value="tripla">Camera tripla</option><option value="triplaplus">Camera tripla+letto</option>
+                                                <option value="family">Family Room 4 posti</option><option value="familyplus">Family Room 4 posti</option>
+                                            </select>
+										</td>
+										<td> </td>
+									</tr>
+                                    <tr> 
+										<td align="right">N. ospiti adulti*:</td>
+										<td>
+											<select name="numeroadulti"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option></select>
+											    N. ospiti bambini*: 
+											<select name="numerobambini"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option></select>
+										</td>
+										<td> </td>
+									</tr>
+									<tr>
+										<td align="right">Data arrivo*:</td>
+										<td>
+											<select name="giornoarrivo"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+											
+											<select name="mesearrivo"><option value="1">gennaio</option><option value="2">febbraio</option><option value="3">marzo</option><option value="4">aprile</option><option value="5">maggio</option><option value="6">giugno</option><option value="7">luglio</option><option value="8">agosto</option><option value="9">settembre</option><option value="10">ottobre</option><option value="11">novembre</option><option value="12">dicembre</option></select>
+											<select name="annoarrivo"><option value="2019" selected>2019</option><option value="2020" >2020</option></select>
+										</td>
+										<td> </td>
+									</tr>
+									<tr> 
+										<td align="right">Data partenza*:</td>
+										<td>
+											<select name="giornopartenza"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+											<select name="mesepartenza"><option value="1">gennaio</option><option value="2">febbraio</option><option value="3">marzo</option><option value="4">aprile</option><option value="5">maggio</option><option value="6">giugno</option><option value="7">luglio</option><option value="8">agosto</option><option value="9">settembre</option><option value="10">ottobre</option><option value="11">novembre</option><option value="12">dicembre</option></select>
+											<select name="annopartenza"><option value="2019" selected>2019</option><option value="2020" >2020</option></select>
+										</td>
+										<td> </td>
+									</tr>
+										
+
+									<tr>
+										<td align="right">Note: </td>
+										<td><input type="text" name="note" size="45" value=""></td>
+										<td> </td>
+									</tr>
+									<tr>
+										<td> </td>
+										<td><br><input type="submit" value="clicca qui per richiedere la disponibilità"><br><br></td>
+										<td> </td>
+									</tr>
+									 <tr>
+										<td> </td>
+										<td>
+											NB: ogni richiesta è subordinata alla conferma dell'albergo<br><br>
+										</td>
+									</tr>
+								</table>
+								</form>
+								
